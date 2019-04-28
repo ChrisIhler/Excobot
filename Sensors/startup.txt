@@ -1,0 +1,1 @@
+imran@imran-UP-CHT01:~$ ffmpeg -f mjpeg -r 1 -i http://localhost:5000/video_feed -c:v libx264 -preset veryfast -maxrate 1984k -bufsize 3968k -vf format=yuv420p -g 60 -c:a aac -b:a 128k -ar 44100 -f flv rtmp://live.twitch.tv/app/live_432696083_TReK1hjwo3w6GwEGkzEiyww28Xlk44
